@@ -29,6 +29,6 @@ let time f =
   let end_ = Sys.time () in
   (end_ -. start)
 
-(* complete の方が実行時間は若干短い（定数倍）だけど
-** 末尾最近じゃないので d = 10^6 で Stack overflow が起きる
+(* complete の方が実行時間は若干短いだけど
+** 末尾再帰じゃないので d = 10^6 で Stack overflow が起きる
 *)
